@@ -1,7 +1,8 @@
 const express = require('express');
 const { nanoid } = require('nanoid');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 
 const urlDatabase = {};
 
